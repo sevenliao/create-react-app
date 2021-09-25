@@ -37,12 +37,28 @@ class Home extends Component {
       name: val
     })
   }
+
+  jump = (val) => {
+    console.log('jump')
+    console.log(val)
+
+    this.props.history.push("/record")
+  }
+
   render() {
     const { name } = this.state;
     return (
       <div>
         <div>{name}</div>
         <button onClick={this.deal.bind(this,'hi event click')}>onClick</button>
+
+        <hr></hr>
+        <div>
+          页面跳转
+          <button onClick={this.jump.bind(this,'click')}>跳转</button>
+        </div>
+        
+
       </div>
     )
   }
