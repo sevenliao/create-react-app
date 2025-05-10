@@ -54,7 +54,7 @@ class Home extends Component {
 
         <hr></hr>
         <div>
-          页面跳转
+          页面跳转 - 点击
           <button onClick={this.jump.bind(this,'click')}>跳转</button>
         </div>
         
